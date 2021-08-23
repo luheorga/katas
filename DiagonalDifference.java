@@ -6,7 +6,7 @@ public class DiagonalDifference {
 
 	private static Random r = new Random();
 	private static List<List<Integer>> lista = new ArrayList<List<Integer>>();
-	private static int diferencia, sumdiag1, sumdiag2;
+	private static int sumdiag1, sumdiag2;
 	private static int count, count2;
 	
 	public static void main(String[] args) {
