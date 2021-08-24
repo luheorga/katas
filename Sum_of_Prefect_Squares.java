@@ -5,6 +5,7 @@ public class Sum_of_Prefect_Squares {
 		// TODO Auto-generated method stub
 		
 	   System.out.println(sumaEnteros(19));
+	   //SquareNumbers();
 	}
 	
 	
@@ -13,6 +14,15 @@ public class Sum_of_Prefect_Squares {
 		int suma=0;
 		int resultado =0;
 		int contador=0;
+		int numeroInicial=1;
+		int[] arreglo;
+		
+		while(numeroInicial*numeroInicial < numero ) {
+			 numeroInicial++ ;
+		}
+		
+		System.out.print("Este es el numero " + numeroInicial);
+		
 		
 		for (int i = numero; i > 0; i--) {
 			
@@ -55,6 +65,34 @@ public class Sum_of_Prefect_Squares {
 		}
 		
 		return resultado;
+		
+	}
+	
+	
+	public static void SquareNumbers() {
+		
+		int numeroInicial = 1;
+		int diferencia = 3;
+		int contador = 0;
+		
+		while (contador <5 ) {
+			
+			if (numeroInicial == 1) {
+				
+				System.out.print(numeroInicial);
+				numeroInicial = numeroInicial + diferencia;
+			}
+			else {
+				
+				System.out.print(numeroInicial);
+				diferencia +=2;
+				numeroInicial += diferencia; 
+			}
+				
+			contador++;
+		}
+		
+		
 		
 	}
 
